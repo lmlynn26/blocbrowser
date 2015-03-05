@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		330C9AC31A9CFE1C000316BB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 330C9AC21A9CFE1C000316BB /* Default-568h@2x.png */; };
+		330C9AC61AA634EA000316BB /* BLCAwesomeFloatingToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 330C9AC51AA634EA000316BB /* BLCAwesomeFloatingToolbar.m */; };
 		33C44B491A9288C80039051E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C44B481A9288C80039051E /* main.m */; };
 		33C44B4C1A9288C80039051E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C44B4B1A9288C80039051E /* AppDelegate.m */; };
 		33C44B541A9288C80039051E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C44B531A9288C80039051E /* Images.xcassets */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		330C9AC21A9CFE1C000316BB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		330C9AC41AA634EA000316BB /* BLCAwesomeFloatingToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCAwesomeFloatingToolbar.h; sourceTree = "<group>"; };
+		330C9AC51AA634EA000316BB /* BLCAwesomeFloatingToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCAwesomeFloatingToolbar.m; sourceTree = "<group>"; };
 		33C44B431A9288C80039051E /* BlocBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlocBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C44B471A9288C80039051E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33C44B481A9288C80039051E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 				33C44B4B1A9288C80039051E /* AppDelegate.m */,
 				33C44B6C1A9289670039051E /* BLCWebBrowserViewController.h */,
 				33C44B6D1A9289670039051E /* BLCWebBrowserViewController.m */,
+				330C9AC41AA634EA000316BB /* BLCAwesomeFloatingToolbar.h */,
+				330C9AC51AA634EA000316BB /* BLCAwesomeFloatingToolbar.m */,
 				33C44B531A9288C80039051E /* Images.xcassets */,
 				33C44B461A9288C80039051E /* Supporting Files */,
 			);
@@ -217,6 +222,7 @@
 			files = (
 				33C44B4C1A9288C80039051E /* AppDelegate.m in Sources */,
 				33C44B6E1A9289670039051E /* BLCWebBrowserViewController.m in Sources */,
+				330C9AC61AA634EA000316BB /* BLCAwesomeFloatingToolbar.m in Sources */,
 				33C44B491A9288C80039051E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
