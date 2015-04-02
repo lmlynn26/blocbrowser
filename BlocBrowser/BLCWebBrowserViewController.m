@@ -151,6 +151,8 @@
                                                    delegate: nil cancelButtonTitle:NSLocalizedString(@"OK, I'm Excited!", @"Welcome button title") otherButtonTitles:nil];
     [alert show];
     
+    self.awesomeToolbar.frame = CGRectMake(20, 100, 280, 60);
+    
 }
 
     
@@ -180,7 +182,6 @@
 //            thisButton.frame = CGRectMake(currentButtonX, CGRectGetMaxY(self.webview.frame), buttonWidth, itemHeight);
 //            currentButtonX += buttonWidth;
 //        }
-        self.awesomeToolbar.frame = CGRectMake(20, 100, 280, 60);
         
     }
     
@@ -265,6 +266,29 @@
         [self.webview reload];
     }
 }
+
+
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset  {
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+        toolbar.frame = potentialNewFrame;
+    }
+}
+
+- (void) floatingToolbar:(BLCAwesomeFloatingToolbar *)toolbar didTryToPinchWithScale:(CGFloat)scale  {
+    
+    
+    CGRect potentialNewFrame = CGRectMake(toolbar.frame.origin.x, toolbar.frame.origin.y, CGRectGetWidth(toolbar.frame) * scale, CGRectGetHeight(toolbar.frame) * scale);
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+        toolbar.frame = potentialNewFrame;
+    }
+}
+
 
 # pragma mark - Miscellaneous
 
